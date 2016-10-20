@@ -1,12 +1,27 @@
-flags: {}
-extra-package-dbs: []
+
+resolver: lts-7.4
+
 packages:
-- '.'
+- location: '.'
 - location:
     git: https://github.com/reflex-frp/reflex-dom-contrib.git
-    commit: d6c744928c81bdb0cd3141f05f7529dc0dae5327
+    commit: c1ac82d6efa2c97c70bf28395339a0918101e0bb
+- location:
+    git: https://github.com/reflex-frp/reflex
+    commit: 50d298cb1b5ed850ec017e2aab10ffa1fb5466b0
+  extra-dep: true
+- location:
+    git: https://github.com/reflex-frp/reflex-dom.git
+    commit: 5de242b220e12e6fc1f5c1fb80045f2b273842b0
+  extra-dep: true
 extra-deps:
+- MemoTrie-0.6.7
+- ghcjs-dom-0.2.4.0
+- newtype-generics-0.4
 - ref-tf-0.4.0.1
-- reflex-0.4.0
-- reflex-dom-0.3
-resolver: lts-6.4
+- webkitgtk3-javascriptcore-0.13.2.0
+- zenc-0.1.1
+
+flags: {}
+
+extra-package-dbs: []
