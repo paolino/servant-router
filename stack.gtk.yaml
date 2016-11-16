@@ -14,9 +14,6 @@ packages:
     git: https://github.com/reflex-frp/reflex-dom.git
     commit: 5de242b220e12e6fc1f5c1fb80045f2b273842b0
   extra-dep: true
-- location:
-    git : https://github.com/imalsogreg/servant-reflex
-    commit: cf0bce400cd194301e7b02e01cbc4139afd47d95
 extra-deps:
 - MemoTrie-0.6.7
 - ghcjs-dom-0.2.4.0
